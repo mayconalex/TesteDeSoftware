@@ -1,8 +1,14 @@
 def Answer(i):
+    # Código refatorado
+    resultado = ""
+    
     if i % 3 == 0:
-        return "fizz"
+        resultado += "fizz"
     
     if i % 5 == 0:
-        return "buzz"
-    
-    return i
+        resultado += "buzz"
+        
+    if resultado == "":
+        return str(i)
+        
+    return resultado
